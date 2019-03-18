@@ -9,14 +9,14 @@ Development
 For development, you have to install [Docker](https://docs.docker.com/) and
 [docker-compose](https://docs.docker.com/compose/install/).
 
-On Mac OS X you have to use boot2docker with [alternative ISO image](https://medium.com/boot2docker-lightweight-linux-for-docker/boot2docker-together-with-virtualbox-guest-additions-da1e3ab2465c). In short, you:
-* run `boot2docker down`
-* download [boot2docker.iso](http://static.dockerfiles.io/boot2docker-v1.1.1-virtualbox-guest-additions-v4.3.12.iso) and save it as `~/.boot2docker/boot2docker.iso`
-* run `VBoxManage sharedfolder add boot2docker-vm -name home -hostpath /Users`
-* run `boot2docker up`
+On Mac OS X you can install [Docker for Mac](https://docs.docker.com/docker-for-mac/install/) which comes bundled with docker-compose. Requirements include Yosemite 10.10.3+ or newer. 
+* Download and open the dmg from [Docker Desktop for Map](https://hub.docker.com/editions/community/docker-ce-desktop-mac?tab=reviews)
+* This requires you to make a login with Docker Hub, which somewhat [controversial](https://github.com/docker/docker.github.io/issues/6910)
 
-Clone this repository and run `docker-compose up -d` to run it locally. This
-will create two Docker containers, one for MySQL database, another for Cloyne
+Or if you use homebrew 
+* `brew install docker`
+
+Clone this repository and run `docker-compose up -d` to run it locally. (If you encounter a TLS Handshake timeout, try running `docker logout` as disccused in this [issue](https://github.com/docker/kitematic/issues/1125)). This will create two Docker containers, one for MySQL database, another for Cloyne
 blog. You should see them running through `docker ps`. Wait for around 10
 seconds for all internal container processes to start correctly and open IP as
 returned by `boot2docker ip`, or open `127.0.0.1` on Linux, in your browser and
