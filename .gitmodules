@@ -16,3 +16,6 @@
 [submodule "plugins/woocommerce"]
 	path = plugins/woocommerce
 	url = https://github.com/woocommerce/woocommerce
+[submodule "plugins/redirection"]
+	path = plugins/redirection
+	url = https://github.com/johngodley/redirection.git
