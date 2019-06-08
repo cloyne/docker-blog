@@ -13,9 +13,6 @@
 [submodule "plugins/bulk-delete"]
 	path = plugins/bulk-delete
 	url = https://github.com/sudar/bulk-delete.git
-[submodule "plugins/woocommerce"]
-	path = plugins/woocommerce
-	url = https://github.com/woocommerce/woocommerce
 [submodule "plugins/redirection"]
 	path = plugins/redirection
 	url = https://github.com/johngodley/redirection.git
