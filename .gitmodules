@@ -16,3 +16,6 @@
 [submodule "plugins/redirection"]
 	path = plugins/redirection
 	url = https://github.com/johngodley/redirection.git
+[submodule "plugins/authLdap"]
+	path = plugins/authLdap
+	url = https://github.com/heiglandreas/authLdap.git
