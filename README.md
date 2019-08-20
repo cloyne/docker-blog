@@ -69,3 +69,7 @@ WordPress
 ---------
 To upgrade the version of wordpress, see
 [cloyne/docker-wordpress](https://www.github.com/cloyne/docker-wordpress)
+
+Trouble-Shooting
+----------------
+If you click the first page and forget the password go back to the terminal and close the processes by typing docker-compose down. Then type git reset --hard to reset the directories and try the process again. Note: this resets everything in the local working copy. 
