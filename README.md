@@ -62,8 +62,9 @@ folder:
 
     cp PATH_TO_DOCKER-WORDPRESS/docker-wordpress/wordpress/wp-content/themes/twentythirteen/* themes/cloyne -Rf
 
-and then go through git diff to restore the cloyne-specific changes, which are
-in
+and then go through with `git add -p` to skim the changes and add the ones in
+files Cloyne hasn't changed. The files with Cloyne-specific changes are
+`footer.php`, `functions.php`, `header.php`, and `style.css`.
 
 WordPress
 ---------
@@ -72,4 +73,4 @@ To upgrade the version of wordpress, see
 
 Trouble-Shooting
 ----------------
-If you click the first page and forget the password go back to the terminal and close the processes by typing docker-compose down. Then type git reset --hard to reset the directories and try the process again. Note: this resets everything in the local working copy. 
+If you click the first page and forget the password go back to the terminal and close the processes by typing docker-compose down. Then type git reset --hard to reset the directories and try the process again. Note: this resets everything in the local working copy.

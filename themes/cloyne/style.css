@@ -3,7 +3,7 @@ Theme Name: Cloyne
 Author: Cloyne
 Author URI: http://cloyne.org/
 Description: Based on Twenty Thirteen theme from Wordpress.
-Version: 2.0
+Version: 2.9
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -2405,6 +2405,10 @@ footer.entry-meta {
 	width: 100%;
 }
 
+.comment-form #wp-comment-cookies-consent {
+	margin: 0 10px 0 0;
+}
+
 .form-allowed-tags,
 .form-allowed-tags code {
 	color: #686758;
@@ -2675,7 +2679,9 @@ footer.entry-meta {
 }
 
 .sidebar .site-footer .widget-area {
+	max-width: 724px;
 	position: relative;
+	left: -158px;
 }
 
 .site-footer .widget {
@@ -2750,6 +2756,13 @@ footer.entry-meta {
 	margin: -10px auto 0;
 }
 
+.site-footer span[role=separator] {
+	padding: 0 0.25em 0 0.5em;
+}
+
+.site-footer span[role=separator]::before {
+	content: '\002f';
+}
 
 /**
  * 8.0 Media Queries
