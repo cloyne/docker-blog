@@ -16,6 +16,8 @@ On Mac OS X you can install [Docker for Mac](https://docs.docker.com/docker-for-
 Or if you use homebrew
 * `brew install docker`
 
+If you're on MAC OS X or Linux, you have to add yourself to the docker group in order to run docker commands without root privileges. Running docker commands with root privileges will cause hard-to-debug errors to crop up. To add yourself to the docker group, run `sudo usermod -aG docker <YOUR USERNAME>`.
+
 Clone this repository and run `docker-compose up -d` to run it locally. (If you encounter a TLS Handshake timeout, try running `docker logout` as disccused in this [issue](https://github.com/docker/kitematic/issues/1125)). This will create two Docker containers, one for MySQL database, another for Cloyne
 blog. You should see them running through `docker ps`. Wait for around 10
 seconds for all internal container processes to start correctly and open IP as
