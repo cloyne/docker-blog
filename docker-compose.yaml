@@ -1,7 +1,7 @@
 version: '3.2'
 services:
   mysql:
-    image: cloyne/mysql-dev
+    image: tozd/mysql:10.1
     container_name: mysql
     volumes:
       - ./development/db:/var/lib/mysql
