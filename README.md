@@ -45,6 +45,16 @@ submodule](http://git-scm.com/book/en/Git-Tools-Submodules). For example:
 git submodule add https://github.com/benhuson/wp-mailfrom.git plugins/wp-mailfrom-ii
 ```
 
+### How to Update WP Plugins
+Navigate to this repository (docker-blog) in your terminal. Then, run the following commands:
+
+* `git submodule update --init --recursive`
+* `git submodule update --remote`
+
+In the `plugin` folder, you will find a folder for each WordPress plugin. Inside each one, will be a php file named after the plugin. For example, for the Redirection plugin, you can find the following file: `plugins/redirection/redirection.php`.
+
+In the top few lines of this file, you should be able to find the plugin version number. Verify that it has increased to the desired version. When you are satisfied, [commit](https://git-scm.com/docs/git-commit) the changes.
+
 Theme
 -----
 
