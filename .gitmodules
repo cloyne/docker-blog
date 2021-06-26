@@ -16,9 +16,6 @@
 [submodule "plugins/redirection"]
 	path = plugins/redirection
 	url = https://github.com/johngodley/redirection.git
-[submodule "plugins/authLdap"]
-	path = plugins/authLdap
-	url = https://github.com/heiglandreas/authLdap.git
 [submodule "plugins/wordpress-oauth-server"]
 	path = plugins/wordpress-oauth-server
 	url = https://github.com/justingreerbbi/wordpress-oauth-server.git
