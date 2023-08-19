@@ -19,3 +19,6 @@
 [submodule "plugins/wordpress-oauth-server"]
 	path = plugins/wordpress-oauth-server
 	url = https://github.com/justingreerbbi/wordpress-oauth-server.git
+[submodule "plugins/wordpress-importer"]
+	path = plugins/wordpress-importer
+	url = https://github.com/WordPress/wordpress-importer
